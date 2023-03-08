@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Designer</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<h1>Pizza Designer</h1>
+	<div id="pizza-container">
+		<div id="pizza-base-container">
+			<p>Select a pizza base:</p>
+			<div class="pizza-base" draggable="true" ondragstart="dragBase(event)">
+				<img src="https://www.pngfind.com/pngs/m/56-567906_pizza-clipart-base-pizza-base-clip-art-hd.png">
+				<p>Thin crust</p>
+			</div>
+			<div class="pizza-base" draggable="true" ondragstart="dragBase(event)">
+				<img src="https://i.pinimg.com/originals/c2/f2/c8/c2f2c844dbefce7f9d65609c324056fd.png">
+				<p>Deep dish</p>
+			</div>
+		</div>
+		<div id="pizza-toppings-container">
+			<p>Select your toppings:</p>
+			<div class="pizza-topping" draggable="true" ondragstart="dragTopping(event)">
+				<img src="https://www.pngfind.com/pngs/m/575-5757823_mushroom-pizza-png-clipart.png">
+				<p>Mushrooms</p>
+			</div>
+			<div class="pizza-topping" draggable="true" ondragstart="dragTopping(event)">
+				<img src="https://www.pngfind.com/pngs/m/276-2766874_olives-png-free-download-olive-png-transparent-png.png">
+				<p>Olives</p>
+			</div>
+			<div class="pizza-topping" draggable="true" ondragstart="dragTopping(event)">
+				<img src="https://www.pngfind.com/pngs/m/11-118948_pineapple-png-hd-transparent-pineapple-hd-png-download.png">
+				<p>Pineapple</p>
+			</div>
+		</div>
+		<div id="pizza-preview-container">
+			<p>Your pizza:</p>
+			<div id="pizza-preview"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
